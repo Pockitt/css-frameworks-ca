@@ -9,13 +9,14 @@
 		/>
 		<link rel="stylesheet" href="/src/css/styles.css" />
 		<script src="/node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+		<script type="module" src="/js/script.js"></script>
 		<title>Feed</title>
 	</head>
 	<body>
-		<header class="row container col-xxl-2">
+		<header>
 			<div class="sidebar" id="sidebar">
 				<div class="sidebar-header">
-					<h2>LFR</h2>
+					<h2>LFG</h2>
 				</div>
 				<div class="search-bar">
 					<input type="text" class="btn-search" />
@@ -31,6 +32,13 @@
 				</nav>
 				<div class="create-post">
 					<button class="btn-create">Create post</button>
+				</div>
+			</div>
+			<div class="hamburger-container" id="hamburger-container">
+				<div class="hamburger-menu" id="hamburger-menu">
+					<div class="bar" id="bar1"></div>
+					<div class="bar" id="bar2"></div>
+					<div class="bar" id="bar3"></div>
 				</div>
 			</div>
 		</header>
