@@ -1,9 +1,12 @@
 @import url(../../node_modules/bootstrap/scss/bootstrap.scss);
 
+$primary: #008080;
+$secondary: #0f1442;
+$cta: #00ff00;
+
 .title {
 	font-size: 3rem;
 	color: white;
-	margin-bottom: 20px;
 }
 
 main {
@@ -12,12 +15,12 @@ main {
 }
 
 body {
-	background-color: #008080;
+	background-color: $primary;
 	height: 100vh;
 }
 
 .profile-header {
-	background-color: #0f1442;
+	background-color: $secondary;
 	padding: 20px;
 	border-radius: 10px;
 	color: white;
@@ -36,7 +39,7 @@ body {
 	}
 
 	.btn-follow {
-		background-color: #00ff00;
+		background-color: $cta;
 		border: none;
 		padding: 10px 20px;
 		color: black;
@@ -63,7 +66,6 @@ body {
 		color: white;
 		margin-bottom: 15px;
 		border-radius: 10px;
-		padding: 15px;
 
 		.post-thumbnail {
 			img {
@@ -88,7 +90,7 @@ body {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
 	.profile-header {
 		text-align: center;
 
@@ -117,7 +119,7 @@ body {
 }
 
 .sidebar {
-	background-color: #0f1442;
+	background-color: $secondary;
 	width: 250px;
 	height: 100vh;
 	display: flex;
@@ -126,7 +128,6 @@ body {
 	left: 0;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 20px;
 	z-index: 5;
 
 	.sidebar-header {
@@ -158,7 +159,6 @@ body {
 	.sidebar-nav {
 		ul {
 			list-style-type: none;
-			padding: 0;
 			li {
 				margin: 15px 0;
 
@@ -166,12 +166,11 @@ body {
 					color: white;
 					text-decoration: none;
 					font-size: 18px;
-					padding: 10px;
 					display: flex;
 					justify-content: center;
 
 					&.active {
-						color: #00ff00;
+						color: $cta;
 						font-weight: bold;
 					}
 
@@ -188,7 +187,7 @@ body {
 		margin-bottom: 60px;
 
 		.btn-create {
-			background-color: #00ff00;
+			background-color: $cta;
 			border: none;
 			border-radius: 20px;
 			padding: 10px 20px;
@@ -254,7 +253,6 @@ body {
 		left: 50%;
 		transform: translateX(-50%);
 		background-color: #14142b;
-		padding: 10px;
 		border-radius: 10px;
 		cursor: pointer;
 		z-index: 999;
@@ -266,18 +264,6 @@ body {
 			margin: 5px 0;
 		}
 	}
-}
-
-.content {
-	margin-left: 250px;
-	padding: 20px;
-	width: calc(100% - 250px);
-	background-color: #1c3a5b;
-	height: 100vh;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .rotate1 {
@@ -298,14 +284,12 @@ body {
 
 .login-box {
 	background-color: white;
-	padding: 40px;
 	border-radius: 15px;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-	width: 300px;
 }
 
 .login-btn {
-	background-color: #00ff00;
+	background-color: $cta;
 	border: none;
 	color: black;
 	padding: 10px 20px;
@@ -325,10 +309,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-}
-
-.input-group {
-	margin-bottom: 20px;
 }
 
 input[type="text"],

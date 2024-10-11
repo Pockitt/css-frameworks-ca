@@ -2,7 +2,6 @@
 .title {
   font-size: 3rem;
   color: white;
-  margin-bottom: 20px;
 }
 
 main {
@@ -55,7 +54,6 @@ body {
   color: white;
   margin-bottom: 15px;
   border-radius: 10px;
-  padding: 15px;
 }
 .posts .post .post-thumbnail img {
   display: inline-block;
@@ -74,7 +72,7 @@ body {
   color: #bbbbbb;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .profile-header {
     text-align: center;
   }
@@ -102,7 +100,6 @@ body {
   left: 0;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
   z-index: 5;
 }
 .sidebar .sidebar-header h2 {
@@ -127,7 +124,6 @@ body {
 }
 .sidebar .sidebar-nav ul {
   list-style-type: none;
-  padding: 0;
 }
 .sidebar .sidebar-nav ul li {
   margin: 15px 0;
@@ -136,7 +132,6 @@ body {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -211,7 +206,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background-color: #14142b;
-    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     z-index: 999;
@@ -223,18 +217,6 @@ body {
     margin: 5px 0;
   }
 }
-.content {
-  margin-left: 250px;
-  padding: 20px;
-  width: calc(100% - 250px);
-  background-color: #1c3a5b;
-  height: 100vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .rotate1 {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -253,10 +235,8 @@ body {
 
 .login-box {
   background-color: white;
-  padding: 40px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: 300px;
 }
 
 .login-btn {
@@ -279,10 +259,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.input-group {
-  margin-bottom: 20px;
 }
 
 input[type=text],
